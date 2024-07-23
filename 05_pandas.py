@@ -26,5 +26,5 @@ df2 = pd.DataFrame(data1)
 print(df2)
 
 print(df2.duplicated(subset="email"))
-df2 = df2.drop_duplicates(subset="email")
+df2 = df2.drop_duplicates(subset="email", keep="last")   #keeping the last duplicate
 print(df2)
